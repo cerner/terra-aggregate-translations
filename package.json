@@ -48,7 +48,7 @@
   "scripts": {
     "compile": "babel src --out-dir lib --copy-files",
     "danger": "danger ci",
-    "jest": "jest --config jestConfig.js",
+    "jest": "jest --config jestConfig.js --passWithNoTests",
     "lint": "eslint --ext .js,.jsx .",
     "precompile": "rm -rf lib",
     "prepublishOnly": "npm run compile",
