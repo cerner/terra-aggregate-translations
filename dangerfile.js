@@ -7,7 +7,7 @@ const hasCHANGELOGChanges = danger.git.modified_files.some((filePath) => {
 });
 
 const hasModifiedFiles = danger.git.modified_files.some((filePath) => {
-  const filePattern = /(src)/;
+  const filePattern = /(scripts)/;
   return !filePath.includes('md') && filePattern.test(filePath);
 });
 
