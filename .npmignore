@@ -1,0 +1,17 @@
+*.log
+node_modules
+src
+tests
+.github
+dangerfile.js
+.travis.yml
+.gitattributes
+.babelrc
+.eslintrc
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+jestConfig.js
+jestSetup.js
+Dockerfile
+terra.png
+CONTRIBUTORS.md

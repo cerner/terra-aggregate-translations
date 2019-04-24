@@ -1,0 +1,61 @@
+{
+  "name": "terra-aggregate-translations",
+  "version": "0.0.0",
+  "description": "The terra-aggregate-translations pre-build tool assists with creating the translation, intl loader and translation loader files that are configured for the specified locales. This tool is offered as a CLI script and as a setup function.",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=8.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerner/terra-aggregate-translations.git"
+  },
+  "keywords": [
+    "Cerner",
+    "Terra",
+    "terra-aggregate-translations",
+    "translations",
+    "react",
+    "react-intl",
+    "i18n",
+    "intl"
+  ],
+  "author": "Cerner Corporation",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/cerner/terra-aggregate-translations#readme",
+  "bugs": {
+    "url": "https://github.com/cerner/terra-aggregate-translations/issues"
+  },
+  "browserslist": [
+    "extends browserslist-config-terra"
+  ],
+  "eslintConfig": {
+    "extends": "terra"
+  },
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/preset-react": "^7.0.0",
+    "browserslist-config-terra": "^1.2.0",
+    "danger": "^3.7.14",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.10.0",
+    "enzyme-to-json": "^3.3.5",
+    "eslint": "^5.14.1",
+    "eslint-config-terra": "^2.4.0",
+    "jest": "^24.1.0"
+  },
+  "scripts": {
+    "compile": "babel src --out-dir lib --copy-files",
+    "danger": "danger ci",
+    "jest": "jest --config jestConfig.js",
+    "lint": "eslint --ext .js,.jsx .",
+    "precompile": "rm -rf lib",
+    "prepublishOnly": "npm run compile",
+    "test": "npm run lint && npm run jest"
+  }
+}
