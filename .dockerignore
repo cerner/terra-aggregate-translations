@@ -5,5 +5,4 @@
 log/*
 tmp
 node_modules
-lib
 build
