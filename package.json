@@ -39,12 +39,8 @@
     "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
-    "@babel/preset-react": "^7.0.0",
     "browserslist-config-terra": "^1.2.0",
     "danger": "^3.7.14",
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.10.0",
-    "enzyme-to-json": "^3.3.5",
     "eslint": "^5.14.1",
     "eslint-config-terra": "^2.4.0",
     "jest": "^24.1.0"

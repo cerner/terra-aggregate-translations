@@ -3,9 +3,6 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.js',
   ],
-  setupFiles: [
-    './jestSetup.js',
-  ],
   coverageDirectory: 'tests/jest/reports/coverage',
   coverageReporters: [
     'html',
@@ -17,8 +14,5 @@ module.exports = {
     '**/(*.)(spec|test).js?(x)',
   ],
   roots: [process.cwd()],
-  snapshotSerializers: [
-    './node_modules/enzyme-to-json/serializer',
-  ],
   testURL: 'http://localhost',
 };
