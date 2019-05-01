@@ -29,9 +29,9 @@
     "extends": "terra"
   },
   "bin": {
-    "tt-aggregate-translations": "bin/aggregate-translations.js"
+    "tt-aggregate-translations": "bin/aggregate-translations-cli.js"
   },
-  "main": "lib/aggregate-translations-cli.js",
+  "main": "lib/aggregate-translations.js",
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^2.19.0",

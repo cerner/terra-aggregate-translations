@@ -31,7 +31,7 @@ Once all of the translation files are created for the specified locales, the scr
 The `aggregate-translations` setup function can be used as follows:
 ```js
 // webpack config file
-const aggregateTranslations = require('terra-aggregate-translations/lib/aggregate-translations');
+const aggregateTranslations = require('terra-aggregate-translations');
 
 const aggregateOptions = {
     baseDir: __dirname,
