@@ -2,7 +2,7 @@
 const fse = require('fs-extra');
 const path = require('path');
 const MemoryFileSystem = require('memory-fs');
-const writeI18nLoaders = require('../../script/write-i18n-loaders');
+const writeI18nLoaders = require('../../lib/write-i18n-loaders');
 
 global.console = { warn: jest.fn() };
 

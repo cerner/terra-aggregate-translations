@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const aggregateMessages = require('../../script/aggregate-messages');
+const aggregateMessages = require('../../lib/aggregate-messages');
 
 global.console = { warn: jest.fn() };
 

@@ -1,4 +1,4 @@
-const generateTranslationFile = require('../../script/generate-translation-file');
+const generateTranslationFile = require('../../lib/generate-translation-file');
 
 const locales = ['en', 'en-US'];
 

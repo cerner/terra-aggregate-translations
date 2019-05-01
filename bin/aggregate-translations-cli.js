@@ -1,7 +1,9 @@
-const commander = require('commander');
-const supportedLocales = require('./i18nSupportedLocales');
+#!/usr/bin/env node
 
-const aggregateTranslations = require('./aggregate-translations');
+const commander = require('commander');
+const supportedLocales = require('../config/i18nSupportedLocales');
+
+const aggregateTranslations = require('../lib/aggregate-translations');
 
 // eslint-disable-next-line no-useless-escape
 const parseCLIList = list => list.replace(/[\[\'\'\]\s]/g, '').split(',').map(String);

@@ -3,9 +3,9 @@ const fse = require('fs-extra');
 const glob = require('glob');
 const path = require('path');
 const MemoryFileSystem = require('memory-fs');
-const defaultSearchPatterns = require('../../script/defaultSearchPatterns');
-const i18nSupportedLocales = require('../../script/i18nSupportedLocales');
-const aggregateTranslations = require('../../script/aggregate-translations');
+const defaultSearchPatterns = require('../../config/defaultSearchPatterns');
+const i18nSupportedLocales = require('../../config/i18nSupportedLocales');
+const aggregateTranslations = require('../../lib/aggregate-translations');
 
 global.console = { warn: jest.fn(), log: jest.fn() };
 

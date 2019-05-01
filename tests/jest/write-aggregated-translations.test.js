@@ -2,7 +2,7 @@
 const fse = require('fs-extra');
 const path = require('path');
 const MemoryFileSystem = require('memory-fs');
-const writeAggregatedTranslations = require('../../script/write-aggregated-translations');
+const writeAggregatedTranslations = require('../../lib/write-aggregated-translations');
 
 global.console = { warn: jest.fn() };
 
