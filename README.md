@@ -1,5 +1,5 @@
 ## Aggregate Translations Tool
-This modules provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for nternationalized and localizatized Terra compoennts to render correctly.
+This module provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for nternationalized and localizatized Terra compoennts to render correctly.
 
  The `terra-aggregate-translations` pre-build tool will aggregate the translations, and create the intl loader and translation loader files that are configured for the specified locales. This tool is offered as a CLI script and as a setup function.
 
@@ -91,7 +91,7 @@ The aggregate-translations script has the ability to compile with ES6 syntax by 
 
 ## Versioning
 
-Terra-toolkit is considered to be stable and will follow [SemVer](http://semver.org/) for versioning.
+Terra-aggregate-translations is considered to be stable and will follow [SemVer](http://semver.org/) for versioning.
 1. MAJOR versions represent breaking changes
 2. MINOR versions represent added functionality in a backwards-compatible manner
 3. PATCH versions represent backwards-compatible bug fixes
