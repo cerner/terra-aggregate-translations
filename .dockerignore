@@ -6,3 +6,4 @@ log/*
 tmp
 node_modules
 build
+reports

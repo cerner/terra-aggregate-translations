@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  dev: &dev
+    image: "terra-aggregate-translations:dev"
+    build:
+      context: ./
+      args:
+        - npm_install=false
+    volumes:
+      - .:/opt/module
+
+  term:
+    <<: *dev
+    command: "/bin/zsh"

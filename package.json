@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "The terra-aggregate-translations pre-build tool assists with creating the translation, intl loader and translation loader files that are configured for the specified locales. This tool is offered as a CLI script and as a setup function.",
   "engines": {
-    "node": ">=8.9.2 <12"
+    "node": ">=8.9.2"
   },
   "repository": {
     "type": "git",
@@ -28,20 +28,34 @@
   "eslintConfig": {
     "extends": "terra"
   },
-  "files": [
-    "scripts"
-  ],
+  "bin": {
+    "tt-aggregate-translations": "bin/aggregate-translations-cli.js"
+  },
+  "main": "lib/aggregate-translations.js",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.1",
+    "lodash.startcase": "^4.4.0"
+  },
   "devDependencies": {
     "danger": "^7.1.3",
     "eslint": "^5.16.0",
     "eslint-config-terra": "^2.4.0",
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "memory-fs": "^0.4.1"
   },
   "scripts": {
     "clean:install": "rm -rf node_modules && rm -f package-lock.json && npm install",
     "danger": "danger ci",
-    "jest": "jest --config jestConfig.js --passWithNoTests",
+    "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
+    "prepublishOnly": "npm whoami && npm run test",
+    "postpublish": "git push",
+    "release:major": "npm version major -m 'Released version %s' && npm publish",
+    "release:minor": "npm version minor -m 'Released version %s' && npm publish",
+    "release:patch": "npm version patch -m 'Released version %s' && npm publish",
     "test": "npm run lint && npm run jest"
   }
 }

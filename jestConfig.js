@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverage: true,
   collectCoverageFrom: [
-    'src/**/*.js',
+    'lib/**.js',
   ],
   coverageDirectory: 'tests/jest/reports/coverage',
   coverageReporters: [
@@ -11,7 +11,7 @@ module.exports = {
     'text-summary',
   ],
   testMatch: [
-    '**/(*.)(spec|test).js?(x)',
+    '**/*.test.js',
   ],
   roots: [process.cwd()],
   testURL: 'http://localhost',
