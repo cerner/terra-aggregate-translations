@@ -52,7 +52,7 @@
     "jest": "jest --config jestConfig.js",
     "lint": "eslint --ext .js,.jsx .",
     "prepublishOnly": "npm whoami && npm run test",
-    "postpublish": "git push",
+    "postpublish": "git push --tag",
     "release:major": "npm version major -m 'Released version %s' && npm publish",
     "release:minor": "npm version minor -m 'Released version %s' && npm publish",
     "release:patch": "npm version patch -m 'Released version %s' && npm publish",
