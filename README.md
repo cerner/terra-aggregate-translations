@@ -89,6 +89,27 @@ This `resolve.modules` configuration indicates module resolving occurs in this o
 
 The aggregate-translations script has the ability to compile with ES6 syntax by setting the format prop to 'es6'. To get these to work properly with Jest and the rest of your configuration, you need to add the [babel-plugin-syntax-dynamic-import](https://www.npmjs.com/package/babel-plugin-syntax-dynamic-import) plugin to your babel configuration. Since we are not using Babel 7 in Terra, you need to use version 6.18.0 to be compatible with our code base.
 
+# Usage with Rails/Webpacker
+
+If you are using Rails/Webpacker, you can generate the aggregate-translation files and ensure they resolve correctly when running webpack with the following config setup in `app/config/webpack/environment.js` file.
+
+```js
+const { environment } = require('@rails/webpacker')
+
+const aggregateTranslations = require('terra-aggregate-translations');
+
+// generate the 'aggregated-translations' in 'tmp'
+aggregateTranslations({
+  format: 'es6',
+  outputDir: 'tmp/aggregated-translations'
+});
+
+// add the 'aggregated-translations' module to the environment
+environment.resolvedModules.append('aggregated-translations', 'tmp/aggregated-translations')
+
+module.exports = environment
+```
+
 ## Versioning
 
 Terra-aggregate-translations is considered to be stable and will follow [SemVer](http://semver.org/) for versioning.
