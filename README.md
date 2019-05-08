@@ -11,7 +11,7 @@ Once all of the translation files are created for the specified locales, the scr
 
 ### Order of Operations
 
-* Start with [default search patterns](https://github.com/cerner/terra-aggregate-translations/blob/master/scripts/script/defaultSearchPatterns.js)
+* Start with [default search patterns](https://github.com/cerner/terra-aggregate-translations/blob/master/config/defaultSearchPatterns.js)
 * Add any `custom directories` to the list of `default search patterns` to get an intermediate list of `directories to search`
 * Filter out any directories provided in the `excludes` option from the intermediate list of `directories to search`
 
