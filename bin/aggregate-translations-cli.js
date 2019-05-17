@@ -32,7 +32,7 @@ commander
   .parse(process.argv);
 
 const aggregationOption = {
-  baseDirectory: commander.baseDir,
+  baseDir: commander.baseDir,
   directories: customSearchDirectories,
   excludes: customExcludeDirectories,
   locales: commander.locales,
