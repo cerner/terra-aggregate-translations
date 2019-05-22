@@ -1,3 +1,19 @@
+<!-- Logo -->
+<p align="center">
+  <img height="128" width="128" src="https://github.com/cerner/terra-enzyme-intl/raw/master/terra.png">
+</p>
+
+<!-- Name -->
+<h1 align="center">
+  Terra Aggregate Translations
+</h1>
+
+[![NPM version](https://badgen.net/npm/v/terra-aggregate-translations)](https://www.npmjs.org/package/terra-aggregate-translations)
+[![License](https://badgen.net/github/license/cerner/terra-aggregate-translations)](https://github.com/cerner/terra-aggregate-translations/blob/master/LICENSE)
+[![Build Status](https://badgen.net/travis/cerner/terra-aggregate-translations)](https://travis-ci.com/cerner/terra-aggregate-translations)
+[![Dependencies status](https://badgen.net/david/dep/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations)
+[![devDependencies status](https://badgen.net/david/dev/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations?type=dev)
+
 ## Aggregate Translations Tool
 This module provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for nternationalized and localizatized Terra compoennts to render correctly.
 
