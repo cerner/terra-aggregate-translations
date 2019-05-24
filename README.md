@@ -15,7 +15,7 @@
 [![devDependencies status](https://badgen.net/david/dev/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations?type=dev)
 
 ## Aggregate Translations Tool
-This module provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for nternationalized and localizatized Terra compoennts to render correctly.
+This module provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for internationalized Terra components to render correctly.
 
  The `terra-aggregate-translations` pre-build tool will aggregate the translations, and create the intl loader and translation loader files that are configured for the specified locales. This tool is offered as a CLI script and as a setup function.
 
