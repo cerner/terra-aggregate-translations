@@ -32,13 +32,13 @@ Translations are expected to be provided in a key / value format in a JSON file.
 `en.json`
 ```
 {
-  "Terra.alert.dismiss": "Dismiss",
-  "Terra.alert.info": "Information.",
-  "Terra.alert.error": "Error.",
-  "Terra.alert.warning": "Warning.",
-  "Terra.alert.alert": "Alert.",
-  "Terra.alert.advisory": "Advisory.",
-  "Terra.alert.success": "Success."
+  "MyApp.alert.dismiss": "Dismiss",
+  "MyApp.alert.info": "Information.",
+  "MyApp.alert.error": "Error.",
+  "MyApp.alert.warning": "Warning.",
+  "MyApp.alert.alert": "Alert.",
+  "MyApp.alert.advisory": "Advisory.",
+  "MyApp.alert.success": "Success."
 }
 ```
 
