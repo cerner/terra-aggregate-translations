@@ -25,6 +25,23 @@ for each specified locale, the message-translation pairs from each translation j
 
 Once all of the translation files are created for the specified locales, the script will create an intl loader and translation loader that is specific to the specified locales. This is utilized by the by terra-i18n's `I18nLoader` to load on-demand locale information.
 
+## Translation Format
+Translations are expected to be provided in a key / value format in a JSON file. A sample translations file looks like the following:
+
+
+`en.json`
+```
+{
+  "Terra.alert.dismiss": "Dismiss",
+  "Terra.alert.info": "Information.",
+  "Terra.alert.error": "Error.",
+  "Terra.alert.warning": "Warning.",
+  "Terra.alert.alert": "Alert.",
+  "Terra.alert.advisory": "Advisory.",
+  "Terra.alert.success": "Success."
+}
+```
+
 ### Order of Operations
 
 * Start with [default search patterns](https://github.com/cerner/terra-aggregate-translations/blob/master/config/defaultSearchPatterns.js)
