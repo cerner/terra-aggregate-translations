@@ -40,8 +40,9 @@
     "lodash.startcase": "^4.4.0"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-terra": "^2.4.0",
+    "acorn": "^6.3.0",
+    "eslint": "^6.1.0",
+    "eslint-config-terra": "cerner/eslint-config-terra#update-dependencies",
     "jest": "^24.7.1",
     "memory-fs": "^0.4.1"
   },

@@ -5,9 +5,12 @@ Unreleased
 ----------
 ### Added
 * Added documentation for usage with Rails/Webpacker
+* Added acorn devDependency, a peerDepenedency for acorn-jsx which comes as a transitive dependency from ESLint
 
 ### Changed
 * Updated fs-extra dependencies
+* Updated ESLint to v6
+* Replaced Object.assign syntax with Object spread syntax
 
 ### Removed
 * Removed DangerJS integration
