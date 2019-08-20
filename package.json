@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "eslint": "^6.1.0",
-    "eslint-config-terra": "cerner/eslint-config-terra#update-dependencies",
+    "eslint-config-terra": "^3.0.0",
     "jest": "^24.7.1",
     "memory-fs": "^0.4.1"
   },
