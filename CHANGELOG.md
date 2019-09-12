@@ -13,6 +13,7 @@ Unreleased
 
 ### Removed
 * Removed DangerJS integration
+* Removed the Finnish translations
 
 1.0.0 - (May 3, 2019)
 ----------
