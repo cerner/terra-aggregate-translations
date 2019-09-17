@@ -34,7 +34,7 @@
   "main": "lib/aggregate-translations.js",
   "dependencies": {
     "chalk": "^2.4.2",
-    "commander": "^2.19.0",
+    "commander": "^3.0.1",
     "fs-extra": "^8.0.1",
     "glob": "^7.1.1",
     "lodash.startcase": "^4.4.0"
