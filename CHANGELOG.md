@@ -10,6 +10,7 @@ Unreleased
 * Updated fs-extra dependencies
 * Updated ESLint to v6
 * Replaced Object.assign syntax with Object spread syntax
+* Updated Commander to ^3.0.1
 
 ### Removed
 * Removed DangerJS integration
