@@ -5,6 +5,7 @@ Unreleased
 ----------
 ### Added
 * Added documentation for usage with Rails/Webpacker
+* Added en-CA translations.
 
 ### Changed
 * Updated fs-extra dependencies
