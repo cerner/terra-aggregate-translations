@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+1.1.0 - (September 19, 2019)
+----------
 ### Added
 * Added documentation for usage with Rails/Webpacker
 * Added en-CA translations.
