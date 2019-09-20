@@ -3,8 +3,12 @@ Changelog
 
 Unreleased
 ----------
+
+1.2.0 - (September 19, 2019)
+----------
 ### Added
 * Added documentation for usage with Rails/Webpacker
+* Added en-CA translations.
 
 ### Changed
 * Updated fs-extra dependencies
