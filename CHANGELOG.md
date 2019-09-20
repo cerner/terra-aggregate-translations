@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+### Changed
+* Updated Commander to ^3.0.1
+* Return the promise created by lazy loading
 
 1.2.0 - (September 19, 2019)
 ----------
@@ -14,7 +17,6 @@ Unreleased
 * Updated fs-extra dependencies
 * Updated ESLint to v6
 * Replaced Object.assign syntax with Object spread syntax
-* Updated Commander to ^3.0.1
 
 ### Removed
 * Removed DangerJS integration
