@@ -24,6 +24,7 @@ var loadCyTranslations = function loadCyTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./cy.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'cy-translations');
 };
 
@@ -74,6 +75,7 @@ var loadEnTranslations = function loadEnTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./en.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'en-translations');
 };
 
@@ -82,6 +84,7 @@ var loadEnUSTranslations = function loadEnUSTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./en-US.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'en-US-translations');
 };
 
@@ -90,6 +93,7 @@ var loadEsTranslations = function loadEsTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./es.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'es-translations');
 };
 
@@ -181,6 +185,7 @@ var loadCyTranslations = function loadCyTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./cy.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'cy-translations');
 };
 
@@ -231,6 +236,7 @@ var loadEnTranslations = function loadEnTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./en.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'en-translations');
 };
 
@@ -239,6 +245,7 @@ var loadEnUSTranslations = function loadEnUSTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./en-US.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'en-US-translations');
 };
 
@@ -247,6 +254,7 @@ var loadEsTranslations = function loadEsTranslations(callback, scope) {
     // eslint-disable-next-line
     var i18n = require('./es.js');
     callback.call(scope, i18n);
+    return i18n;
   }, 'es-translations');
 };
 

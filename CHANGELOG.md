@@ -14,6 +14,7 @@ Unreleased
 * Updated fs-extra dependencies
 * Updated ESLint to v6
 * Replaced Object.assign syntax with Object spread syntax
+* Return the promise created by lazy loading
 
 ### Removed
 * Removed DangerJS integration
