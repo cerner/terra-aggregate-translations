@@ -39,6 +39,10 @@
     "glob": "^7.1.1",
     "lodash.startcase": "^4.4.0"
   },
+  "peerDependencies": {
+    "intl": "^1.2.5",
+    "react-intl": "^2.8.0"
+  },
   "devDependencies": {
     "eslint": "^6.1.0",
     "eslint-config-terra": "^3.0.0",
