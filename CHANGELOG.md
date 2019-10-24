@@ -7,6 +7,11 @@ Unreleased
 * Updated Commander to ^3.0.1
 * Return the promise created by lazy loading
 
+1.3.0 - (October 3, 2019)
+----------
+### Changed
+* Return the promise created by lazy loading
+
 1.2.0 - (September 19, 2019)
 ----------
 ### Added
