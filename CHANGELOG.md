@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+1.4.0 - (October 30, 2019)
+----------
 ### Changed
 * Updated Commander to ^3.0.1
 
