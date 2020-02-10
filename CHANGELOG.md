@@ -3,6 +3,8 @@ Changelog
 
 Unreleased
 ----------
+### Changed
+* Update aggregate translations function to return the list of supported locales
 
 1.5.0 - (January 28, 2020)
 ----------
