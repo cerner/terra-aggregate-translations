@@ -1,15 +1,9 @@
 version: '3'
 
 services:
-  dev: &dev
-    image: "terra-aggregate-translations:dev"
-    build:
-      context: ./
-      args:
-        - npm_install=false
+  dev:
+    image: cerner/terra-node-dev:1
+    ports:
+      - 8080:8080
     volumes:
       - .:/opt/module
-
-  term:
-    <<: *dev
-    command: "/bin/zsh"
