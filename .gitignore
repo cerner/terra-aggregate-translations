@@ -66,3 +66,4 @@ typings/
 .next
 
 aggregated-translations/
+package-lock.json
