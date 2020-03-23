@@ -3,9 +3,6 @@ Changelog
 
 Unreleased
 ----------
-### Changed
-* Update copyright to include 2020
-
 ### Fixed
 * Update translation directory search order such that the root level translations are honored over translations found in node_modules
 
