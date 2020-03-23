@@ -42,6 +42,9 @@ describe('aggregate-translations', () => {
 
     expect(globSpy).toHaveBeenCalledTimes(numOfDefaultSearchPatterns);
     expect(searchedDirectories).toEqual(expect.arrayContaining(defaultSearchPatterns));
+
+    expect(globSpy).toHaveBeenNthCalledWith(1, 'node_modules/*/node_modules/*/node_modules/*/translations', expect.anything());
+    expect(globSpy).toHaveBeenNthCalledWith(4, 'translations', expect.anything());
     expect(supportedLocales).toEqual(i18nSupportedLocales);
   });
 
