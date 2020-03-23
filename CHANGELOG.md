@@ -6,6 +6,21 @@ Unreleased
 ### Changed
 * Update copyright to include 2020
 
+1.7.0 - (March 17, 2020)
+----------
+### Changed
+* git ignore package-lock.json
+
+1.6.0 - (February 13, 2020)
+----------
+### Changed
+* Update aggregate translations function to return the list of supported locales
+
+1.5.0 - (January 28, 2020)
+----------
+### Changed
+* Update copyright to include 2020
+
 1.4.0 - (October 30, 2019)
 ----------
 ### Changed

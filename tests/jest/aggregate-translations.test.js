@@ -38,11 +38,11 @@ describe('aggregate-translations', () => {
   });
 
   it('aggregates on the default search patterns', () => {
-    aggregateTranslations();
+    const supportedLocales = aggregateTranslations();
 
     expect(globSpy).toHaveBeenCalledTimes(numOfDefaultSearchPatterns);
-    // expect(searchedDirectories).toEqual(expect.arrayContaining(defaultSearchPatterns(process.cwd())));
     expect(searchedDirectories).toEqual(expect.arrayContaining(defaultSearchPatterns));
+    expect(supportedLocales).toEqual(i18nSupportedLocales);
   });
 
   it('aggregates on the default search patterns and custom directory patterns', () => {
@@ -98,15 +98,16 @@ describe('aggregate-translations', () => {
     expect(writtenFilePaths.length).toEqual(numSupportedLocales + 2);
   });
 
-  it('aggregates on the specfied locales', () => {
+  it('aggregates on the specified locales', () => {
     const translationsFiles = [
       expect.stringContaining(`aggregated-translations${path.sep}en.js`),
     ];
 
-    aggregateTranslations({ locales: ['en'] });
+    const supportedLocales = aggregateTranslations({ locales: ['en'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
     expect(writtenFilePaths.length).toEqual(3);
+    expect(supportedLocales).toEqual(['en']);
   });
 
   it('always aggregates on en locale even if not specified', () => {
@@ -115,10 +116,11 @@ describe('aggregate-translations', () => {
       `${process.cwd()}${path.sep}aggregated-translations${path.sep}es.js`,
     ];
 
-    aggregateTranslations({ locales: ['es'] });
+    const supportedLocales = aggregateTranslations({ locales: ['es'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
     expect(writtenFilePaths.length).toEqual(4);
+    expect(supportedLocales).toEqual(['es', 'en']);
   });
 
   it('writes the intl and translations loaders', () => {
