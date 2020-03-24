@@ -5,8 +5,8 @@ const aggregateMessages = require('../../lib/aggregate-messages');
 global.console = { warn: jest.fn() };
 
 const translationDirectories = [
-  path.resolve(__dirname, 'fixtures', 'translations'),
   path.resolve(__dirname, 'fixtures', 'ned_modules', 'fixtures1', 'translations'),
+  path.resolve(__dirname, 'fixtures', 'translations'),
 ];
 const locales = ['en', 'en-US', 'es'];
 const fileSystem = fs;
@@ -36,7 +36,10 @@ describe('aggregates translations messages', () => {
     const messages = aggregateMessages(translationDirectories, locales, fileSystem);
 
     expect(messages).toHaveProperty('en', expectedMessages);
-    expect(messages).toHaveProperty('en-US', expectedMessages);
+
+    const nestedMessageResult = { 'Terra.matching.key': 'Translation that should be honored over node_modules translation' };
+    expect(messages).toHaveProperty('en-US', { ...expectedMessages, ...nestedMessageResult });
+
     expect(messages).toHaveProperty('es', expectedMessages);
   });
 });
