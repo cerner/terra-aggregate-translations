@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+1.8.0 - (March 24, 2020)
+----------
 ### Fixed
 * Update translation directory search order such that the root level translations are honored over translations found in node_modules
 
