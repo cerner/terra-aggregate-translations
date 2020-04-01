@@ -71,7 +71,7 @@ Object.keys(testFileSystems).forEach((testFS) => {
       expect(console.warn).toBeCalledWith(expect.stringContaining('en-AU translation missing for Terra.test.fixtures.test, en translation string will be used instead.'));
     });
 
-    it('thows an error if a locale was not aggregated on', () => {
+    it('throws an error if a locale was not aggregated on', () => {
       const errorRegex = /Translations aggregated for es locale, but messages were not loaded correctly./;
       expect(() => writeAggregatedTranslations({ en: {}, 'en-US': {} }, locales, fileSystem, outputDir)).toThrowError(errorRegex);
     });
