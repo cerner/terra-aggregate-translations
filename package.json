@@ -26,7 +26,7 @@
     "url": "https://github.com/cerner/terra-aggregate-translations/issues"
   },
   "eslintConfig": {
-    "extends": "terra"
+    "extends": "@cerner/terra"
   },
   "bin": {
     "tt-aggregate-translations": "bin/aggregate-translations-cli.js"
@@ -44,8 +44,8 @@
     "react-intl": "^2.8.0"
   },
   "devDependencies": {
+    "@cerner/eslint-config-terra": "^4.0.0",
     "eslint": "^6.1.0",
-    "eslint-config-terra": "^3.0.0",
     "jest": "^24.7.1",
     "memory-fs": "^0.4.1"
   },
