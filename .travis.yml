@@ -5,5 +5,5 @@ script:
   - npm run test
 branches:
   only:
-    - master
+    - main
 cache: false
