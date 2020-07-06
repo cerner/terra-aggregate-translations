@@ -1,6 +1,6 @@
 <!-- Logo -->
 <p align="center">
-  <img height="128" width="128" src="https://github.com/cerner/terra-enzyme-intl/raw/master/terra.png">
+  <img height="128" width="128" src="https://github.com/cerner/terra-terra-aggregate-translations/raw/main/terra.png">
 </p>
 
 <!-- Name -->
@@ -9,7 +9,7 @@
 </h1>
 
 [![NPM version](https://badgen.net/npm/v/terra-aggregate-translations)](https://www.npmjs.org/package/terra-aggregate-translations)
-[![License](https://badgen.net/github/license/cerner/terra-aggregate-translations)](https://github.com/cerner/terra-aggregate-translations/blob/master/LICENSE)
+[![License](https://badgen.net/github/license/cerner/terra-aggregate-translations)](https://github.com/cerner/terra-aggregate-translations/blob/main/LICENSE)
 [![Build Status](https://badgen.net/travis/cerner/terra-aggregate-translations)](https://travis-ci.com/cerner/terra-aggregate-translations)
 [![Dependencies status](https://badgen.net/david/dep/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations)
 [![devDependencies status](https://badgen.net/david/dev/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations?type=dev)
@@ -44,7 +44,7 @@ Translations are expected to be provided in a key / value format in a JSON file.
 
 ### Order of Operations
 
-* Start with [default search patterns](https://github.com/cerner/terra-aggregate-translations/blob/master/config/defaultSearchPatterns.js)
+* Start with [default search patterns](https://github.com/cerner/terra-aggregate-translations/blob/main/config/defaultSearchPatterns.js)
 * Add any `custom directories` to the list of `default search patterns` to get an intermediate list of `directories to search`
 * Filter out any directories provided in the `excludes` option from the intermediate list of `directories to search`
 
@@ -55,7 +55,7 @@ Translations are expected to be provided in a key / value format in a JSON file.
 | directories | -d, --directories | Array of Strings | Translation directory regex pattern(s) to glob, in addition to the default search patterns. | [ ] |
 | excludes | -e, --excludes | Array of Strings | Translation directory regex pattern(s) to glob exclude from the search patterns. | [ ] |
 | outputFileSystem | N/A | File System Module | The filesystem to use to write the translation and loader files. Note: The file system provide must support `mkdirp`. | [fs-extra](https://www.npmjs.com/package/fs-extra) |
-| locales  | -l, --locales | Array of Strings | The list of locale codes to aggregate. **Note: 'en' is always added if not specified.** | [terra-supported locales](https://github.com/cerner/terra-aggregate-translations/blob/master/config/i18nSupportedLocales.js) |
+| locales  | -l, --locales | Array of Strings | The list of locale codes to aggregate. **Note: 'en' is always added if not specified.** | [terra-supported locales](https://github.com/cerner/terra-aggregate-translations/blob/main/config/i18nSupportedLocales.js) |
 | outputDir | -o, --ouputDir | String | Output directory for the translation and loader files | ./aggregated-translations |
 | configPath | -c, --config | String | The path to the terra i18n configuration file | undefined |
 | format | -f, --format | String | The format of syntax to output the translations with. Possible values are 'es5' and 'es6' | 'es5' |
