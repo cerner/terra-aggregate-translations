@@ -16,9 +16,9 @@ const defaultSearchPatterns = [
   'packages/*/node_modules/*/node_modules/*/translations',
   'packages/*/node_modules/*/translations',
   
-  'packages/@cerner/*/node_modules/@cerner/*/node_modules/@cerner/*/node_modules/*/translations',
-  'packages/@cerner/*/node_modules/@cerner/*/node_modules/@cerner/*/translations',
-  'packages/@cerner/*/node_modules/@cerner/*/translations',
+  'packages/*/node_modules/@cerner/*/node_modules/@cerner/*/node_modules/@cerner/*/translations',
+  'packages/*/node_modules/@cerner/*/node_modules/@cerner/*/translations',
+  'packages/*/node_modules/@cerner/*/translations',
   /* package level translations */
   'packages/terra-*/translations',
 ];
