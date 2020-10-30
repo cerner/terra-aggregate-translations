@@ -3,6 +3,9 @@ Changelog
 
 Unreleased
 ----------
+
+1.10.0 - (October 30, 2020)
+----------
 ### Fixed
 * Support @cerner scoped packages.
 
