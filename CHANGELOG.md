@@ -3,6 +3,8 @@ Changelog
 
 Unreleased
 ----------
+### Fixed
+* Support @cerner scoped packages.
 
 1.9.0 - (June 9, 2020)
 ----------
