@@ -4,6 +4,11 @@ Changelog
 Unreleased
 ----------
 
+1.11.0 - (November 17, 2020)
+----------
+
+* Doc Update
+
 1.10.0 - (October 30, 2020)
 ----------
 ### Fixed
