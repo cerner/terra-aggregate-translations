@@ -4,6 +4,16 @@ Changelog
 Unreleased
 ----------
 
+1.11.0 - (November 17, 2020)
+----------
+
+* Doc Update
+
+1.10.0 - (October 30, 2020)
+----------
+### Fixed
+* Support @cerner scoped packages.
+
 1.9.0 - (June 9, 2020)
 ----------
 ### Changed
