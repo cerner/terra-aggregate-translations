@@ -98,7 +98,7 @@ describe('aggregate-translations', () => {
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
     const numSupportedLocales = i18nSupportedLocales.length;
-    expect(writtenFilePaths.length).toEqual(numSupportedLocales + 2);
+    expect(writtenFilePaths.length).toEqual(numSupportedLocales);
   });
 
   it('aggregates on the specified locales', () => {
@@ -109,7 +109,7 @@ describe('aggregate-translations', () => {
     const supportedLocales = aggregateTranslations({ locales: ['en'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
-    expect(writtenFilePaths.length).toEqual(3);
+    expect(writtenFilePaths.length).toEqual(1);
     expect(supportedLocales).toEqual(['en']);
   });
 
@@ -122,21 +122,8 @@ describe('aggregate-translations', () => {
     const supportedLocales = aggregateTranslations({ locales: ['es'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
-    expect(writtenFilePaths.length).toEqual(4);
+    expect(writtenFilePaths.length).toEqual(2);
     expect(supportedLocales).toEqual(['es', 'en']);
-  });
-
-  it('writes the intl and translations loaders', () => {
-    const loaderFiles = [
-      `${process.cwd()}${path.sep}aggregated-translations${path.sep}intlLoaders.js`,
-      `${process.cwd()}${path.sep}aggregated-translations${path.sep}translationsLoaders.js`,
-    ];
-
-    aggregateTranslations();
-
-    expect(writtenFilePaths).toEqual(expect.arrayContaining(loaderFiles));
-    const numSupportedLocales = i18nSupportedLocales.length;
-    expect(writtenFilePaths.length).toEqual(numSupportedLocales + 2);
   });
 
   it('writes to the default output directory', () => {
