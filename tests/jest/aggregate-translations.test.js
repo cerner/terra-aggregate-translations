@@ -12,6 +12,10 @@ global.console = { warn: jest.fn(), log: jest.fn() };
 const numOfDefaultSearchPatterns = defaultSearchPatterns.length;
 const nestedOutputDir = './translations/folder';
 
+jest.mock('react-intl', () => ({
+  intlShape: {},
+}));
+
 describe('aggregate-translations', () => {
   let searchedDirectories;
   let globOptions;
@@ -98,7 +102,7 @@ describe('aggregate-translations', () => {
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
     const numSupportedLocales = i18nSupportedLocales.length;
-    expect(writtenFilePaths.length).toEqual(numSupportedLocales);
+    expect(writtenFilePaths.length).toEqual(numSupportedLocales + 2);
   });
 
   it('aggregates on the specified locales', () => {
@@ -109,7 +113,7 @@ describe('aggregate-translations', () => {
     const supportedLocales = aggregateTranslations({ locales: ['en'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
-    expect(writtenFilePaths.length).toEqual(1);
+    expect(writtenFilePaths.length).toEqual(3);
     expect(supportedLocales).toEqual(['en']);
   });
 
@@ -122,7 +126,7 @@ describe('aggregate-translations', () => {
     const supportedLocales = aggregateTranslations({ locales: ['es'] });
 
     expect(writtenFilePaths).toEqual(expect.arrayContaining(translationsFiles));
-    expect(writtenFilePaths.length).toEqual(2);
+    expect(writtenFilePaths.length).toEqual(4);
     expect(supportedLocales).toEqual(['es', 'en']);
   });
 
