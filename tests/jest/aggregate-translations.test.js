@@ -12,6 +12,10 @@ global.console = { warn: jest.fn(), log: jest.fn() };
 const numOfDefaultSearchPatterns = defaultSearchPatterns.length;
 const nestedOutputDir = './translations/folder';
 
+jest.mock('react-intl', () => ({
+  intlShape: {},
+}));
+
 describe('aggregate-translations', () => {
   let searchedDirectories;
   let globOptions;

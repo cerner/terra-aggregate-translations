@@ -32,6 +32,24 @@ exports.messages = messages;
 "
 `;
 
+exports[`generate en translations file for react-intl v5 creates the compiled en translation file 1`] = `
+"'use strict';
+
+  Object.defineProperty(exports, \\"__esModule\\", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _default = {
+  \\"Terra.fixtures.test\\": \\"Test...\\",
+  \\"Terra.Fixtures1.test\\": \\"Test...\\",
+  \\"Terra.More.fixtures.test\\": \\"Test...\\",
+  \\"Terra.test.fixtures.test\\": \\"Test...\\"
+};
+  exports.default = _default;
+"
+`;
+
 exports[`generate en-US translations file creates the compiled en-US translation file 1`] = `
 "'use strict';
 
@@ -61,5 +79,23 @@ var locale = 'en-US';
 exports.areTranslationsLoaded = areTranslationsLoaded;
 exports.locale = locale;
 exports.messages = messages;
+"
+`;
+
+exports[`generate en-US translations file for react-intl v5 creates the compiled en-US translation file 1`] = `
+"'use strict';
+
+  Object.defineProperty(exports, \\"__esModule\\", {
+    value: true
+  });
+  exports.default = void 0;
+
+  var _default = {
+  \\"Terra.fixtures.test\\": \\"Test...\\",
+  \\"Terra.Fixtures1.test\\": \\"Test...\\",
+  \\"Terra.More.fixtures.test\\": \\"Test...\\",
+  \\"Terra.test.fixtures.test\\": \\"Test...\\"
+};
+  exports.default = _default;
 "
 `;
