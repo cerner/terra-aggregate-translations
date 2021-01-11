@@ -48,7 +48,7 @@
     "eslint": "^6.1.0",
     "jest": "^24.7.1",
     "memory-fs": "^0.4.1",
-    "react-intl": ">2.8.0"
+    "react-intl": "^2.8.0 || ^5.0.0"
   },
   "scripts": {
     "clean:install": "rm -rf node_modules && rm -f package-lock.json && npm install",
