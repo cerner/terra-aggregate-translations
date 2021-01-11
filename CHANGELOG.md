@@ -4,7 +4,7 @@ Changelog
 Unreleased
 ----------
 
-### Breaking Changes
+### Changed
 * Removed generation of translation and locale data loader files.
 * Upgraded react-intl peer dependency version.
 
