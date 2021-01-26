@@ -4,6 +4,8 @@ Changelog
 Unreleased
 ----------
 
+1.12.0 - (January 26, 2021)
+----------
 ### Changed
 * Removed generation of translation and locale data loader files.
 * Upgraded react-intl peer dependency version.
