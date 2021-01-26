@@ -4,6 +4,10 @@ Changelog
 Unreleased
 ----------
 
+### Changed
+* Removed generation of translation and locale data loader files.
+* Upgraded react-intl peer dependency version.
+
 1.11.0 - (November 17, 2020)
 ----------
 
