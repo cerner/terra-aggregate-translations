@@ -14,6 +14,8 @@
 [![Dependencies status](https://badgen.net/david/dep/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations)
 [![devDependencies status](https://badgen.net/david/dev/cerner/terra-aggregate-translations)](https://david-dm.org/cerner/terra-aggregate-translations?type=dev)
 
+# This repo is archived and active development has moved to [terra-toolkit](https://github.com/cerner/terra-toolkit).
+
 ## Aggregate Translations Tool
 This module provides the `aggregate-translations` pre-build tool to assist with creating the translation and loader files needed for internationalized Terra components to render correctly.
 
